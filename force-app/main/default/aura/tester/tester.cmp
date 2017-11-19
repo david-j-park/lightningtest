@@ -1,0 +1,8 @@
+<aura:component implements="force:apphostable">
+    <aura:attribute name="thing" type="Object"  />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <div class="bg">
+        <lightning:input name="text" label="Text" value="{!v.thing.text}" />
+        <p>{!v.thing.text}</p>    
+    </div>
+</aura:component>	
